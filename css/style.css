@@ -4,6 +4,7 @@
 body {
     padding-top: 44px;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 .container {
     max-width: 1200px;
@@ -64,6 +65,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
     padding: 68px 70px;
+    margin-bottom: 56px;
 }
 .promo-title {
     font-style: normal;
@@ -80,4 +82,95 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #302C34;
+}
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.card-img {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+.card-text {
+    padding: 20px 24px 35px 24px;
+}
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.card-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+}
+.card-info {
+    display: flex;
+    align-items: center;
+}
+.card-rating {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107;
+    margin-right: 26px;
+}
+.card-price,
+.card-category {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+.card-price {
+    margin-right: 10px;
+}
+.card-price::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
 }
