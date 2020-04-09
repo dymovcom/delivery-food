@@ -33,6 +33,7 @@ body {
 .input-search {
     width: 306px;
     background-image: url(../img/search.svg);
+    margin-left: auto;
 }
 .buttons {
     display: flex;
@@ -58,6 +59,9 @@ body {
 }
 .button-icon {
     margin-right: 6px;
+}
+.button-card-text {
+    margin-right: 10px;
 }
 .main {
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
@@ -89,7 +93,6 @@ body {
 .section-heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .section-title {
     font-style: normal;
@@ -98,6 +101,7 @@ body {
     line-height: 42px;
     color: #000000;
     margin: 0;
+    margin-right: 30px;
 }
 .cards {
     display: flex;
@@ -112,10 +116,11 @@ body {
     overflow: hidden;
     margin-bottom: 30px;
     flex-basis: 31%;
+    text-decoration: none;
 }
 .card-img {
     width: 384px;
-    height: 250px;
+    /* height: 250px; */
     object-fit: cover;
 }
 .card-text {
@@ -135,6 +140,9 @@ body {
     line-height: 32px;
     color: #000000;
 }
+.card-title-reg {
+    font-weight: 400;
+}
 .card-tag {
     font-style: normal;
     font-weight: normal;
@@ -145,12 +153,26 @@ body {
     border-radius: 2px;
     padding: 1px 8px;
 }
-.card-info {
+.card-info,
+.restaurant-info {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.card-rating {
+.card-buttons {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.card-price-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: 32px;
+}
+.rating {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -158,18 +180,25 @@ body {
     color: #FFC107;
     margin-right: 26px;
 }
-.card-price,
-.card-category {
+.price,
+.category {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
     color: #8C8C8C;
 }
-.card-price {
+.ingredients {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+}
+.price {
     margin-right: 10px;
 }
-.card-price::after {
+.price::after {
     content: "";
     width: 5px;
     height: 5px;
@@ -217,11 +246,11 @@ body {
         /* background-position: top right -250px; */
         background-size: 750px;
     }
-    .card-rating {
+    .rating {
         margin-right: 15px;
     }
-    .card-price,
-    .card-category {
+    .price,
+    .category {
         font-size: 14px;
     }
 }
@@ -255,7 +284,7 @@ body {
     .card-info {
         flex-wrap: wrap;
     }
-    .card-rating {
+    .card .rating {
         flex-basis: 100%;
     }
     .card-title {
