@@ -376,6 +376,18 @@ body {
     .footer-link {
         font-size: 16px;
     }
+    .modal-dialog {
+        max-width: 560px;
+        padding: 20px 25px;
+    }
+    .modal-header {
+        margin-bottom: 25px;
+    }
+    .modal-title {
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -410,6 +422,12 @@ body {
     }
     .promo-text {
         margin-top: 0;
+    }
+    .modal-dialog {
+        max-width: 480px;
+    }
+    .modal-body {
+        margin-bottom: 25px;
     }
 }
 @media (max-width:578px) {
@@ -465,6 +483,48 @@ body {
     .footer {
         padding: 30px 0;
     }
+    .modal-dialog {
+        max-width: 80%;
+    }
+    .modal-title {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .close {
+        font-size: 22px;
+    }
+    .food-row {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        flex-wrap: wrap;
+    }
+    .food-name {
+        font-size: 16px;
+        flex-basis: 1;
+    }
+    .food-price {
+        margin: 3px 0;
+        font-size: 16px;
+        flex-basis: 1;
+    }
+    .modal-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .modal-footer {
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .modal-pricetag {
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .footer-buttons .button {
+        padding: 4px 8px;
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 @media (max-width: 480px) {
     .button-text {
@@ -489,5 +549,37 @@ body {
     .footer-logo,
     .footer-nav {
         margin-bottom: 20px;
+    }
+    .modal-title {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .close {
+        font-size: 18px;
+    }
+    .food-row {
+        margin-bottom: 3px;
+        padding-bottom: 3px;
+    }
+    .food-name {
+        font-size: 14px;
+    }
+    .food-price {
+        margin: 3px 0;
+        font-size: 14x;
+    }
+    .counter-button {
+        width: 29px;
+        height: 22px;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .modal-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .modal-body {
+        margin-bottom: 15px;
     }
 }
